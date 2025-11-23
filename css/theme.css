@@ -1,0 +1,121 @@
+/* ================================
+   Custom Dark Theme (Refined Headings)
+   ================================ */
+
+   :root {
+    --page-bg: #272757;          /* Main page background */
+    --section-bg: #33337A;       /* Section background (lighter navy) */
+    --heading-label: rgba(134, 134, 172, 0.25); /* Background big text */
+    --heading-topic: #ffffff;    /* Actual section title */
+    --text-light: #ffffff;       /* Normal text */
+    --text-dark: #000000;        /* Dark text (if needed) */
+    --progress-yellow: #FFD700;  /* Progress bar */
+  }
+  
+  /* Page background */
+  body {
+    background-color: var(--page-bg);
+    color: var(--text-light);
+  }
+  
+  /* Navbar */
+  .ftco-navbar-light {
+    background: var(--page-bg) !important;
+  }
+  .navbar-nav .nav-link {
+    color: var(--text-light) !important;
+  }
+  .navbar-nav .nav-link:hover {
+    color: var(--progress-yellow) !important;
+  }
+  
+  /* Sections */
+  .ftco-section {
+    background-color: var(--section-bg);
+    color: var(--text-light);
+  }
+  .ftco-section:nth-child(even) {
+    background-color: #2F2F70;
+  }
+  
+  /* Big background labels ("About", "Resume", etc.) */
+  .heading-section .big,
+  .heading-section .big-2 {
+    color: var(--heading-label) !important;
+    font-weight: 800;
+  }
+  
+  /* Section titles ("About Me", "My Skills", etc.) */
+  .heading-section h2 {
+    color: var(--heading-topic) !important;
+    font-weight: 600;
+  }
+  
+  /* Paragraphs */
+  p, li, span {
+    color: var(--text-light);
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: var(--progress-yellow) !important;
+    border-color: var(--progress-yellow) !important;
+    color: var(--text-dark) !important;
+  }
+  .btn-primary:hover {
+    background-color: #e6c200 !important;
+  }
+  .btn-outline-white {
+    color: var(--text-light) !important;
+    border: 2px solid var(--text-light) !important;
+  }
+  .btn-outline-white:hover {
+    background: var(--progress-yellow) !important;
+    border-color: var(--progress-yellow) !important;
+    color: var(--text-dark) !important;
+  }
+  
+  /* Hero overlay */
+  .hero .overlay {
+    background: rgba(39, 39, 87, 0.8);
+  }
+  .hero h1 span {
+    color: var(--progress-yellow);
+  }
+  
+  /* Progress Bars */
+  .progress-bar {
+    background: var(--progress-yellow) !important;
+    color: var(--text-dark);
+  }
+  
+  /* Services */
+  .services-1 {
+    background: var(--section-bg);
+    border: 1px solid var(--heading-label);
+    color: var(--text-light);
+    transition: 0.3s;
+  }
+  .services-1:hover {
+    background: var(--progress-yellow);
+    color: var(--text-dark);
+  }
+  .services-1 .icon {
+    color: var(--progress-yellow);
+  }
+  .services-1:hover .icon {
+    color: var(--text-dark);
+  }
+  
+  /* Footer */
+  .ftco-footer {
+    background: var(--page-bg) !important;
+    color: var(--text-light) !important;
+  }
+  .ftco-footer a {
+    color: var(--progress-yellow);
+  }
+  .ftco-footer a:hover {
+    color: #ffffff;
+  }
+  
